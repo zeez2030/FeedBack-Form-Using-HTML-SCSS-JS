@@ -185,6 +185,16 @@ main:nth-child(even) {
     }
 }
 
+.vl {
+    border-left: 1px solid rgba(51, 25, 25, 0.6);
+    height: 270px;
+    position: absolute;
+    left: 43%;
+    margin-left: -3px;
+    top: 0%;
+    z-index: -2;
+}
+
 aside {
     vertical-align: middle;
     transform: translateY(30%);
@@ -198,6 +208,7 @@ aside {
         border-radius: 100%;
         text-align: center;
         background: rgba(51, 25, 25, 0.3);
+        z-index: 1;
 
         &:hover {
             cursor: pointer;
@@ -214,8 +225,8 @@ aside {
         font-size: .8em;
         padding: .1em;
         color: white;
-        background: rgba(51, 25, 25, 0.6);
-        animation: pop .2s forwards;
+        background: rgba(51, 25, 25, 1);
+        animation: pop .3s forwards;
         position: relative;
         font-weight: 100;
     }

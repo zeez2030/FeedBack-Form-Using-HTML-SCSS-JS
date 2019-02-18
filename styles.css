@@ -182,6 +182,16 @@ main:nth-child(even) button:hover {
   cursor: pointer;
 }
 
+.vl {
+  border-left: 1px solid rgba(51, 25, 25, 0.6);
+  height: 270px;
+  position: absolute;
+  left: 43%;
+  margin-left: -3px;
+  top: 0%;
+  z-index: -2;
+}
+
 aside {
   vertical-align: middle;
   -webkit-transform: translateY(30%);
@@ -196,6 +206,7 @@ aside p {
   border-radius: 100%;
   text-align: center;
   background: rgba(51, 25, 25, 0.3);
+  z-index: 1;
 }
 
 aside p:hover {
@@ -212,9 +223,9 @@ aside .active {
   font-size: .8em;
   padding: .1em;
   color: white;
-  background: rgba(51, 25, 25, 0.6);
-  -webkit-animation: pop .2s forwards;
-          animation: pop .2s forwards;
+  background: #331919;
+  -webkit-animation: pop .3s forwards;
+          animation: pop .3s forwards;
   position: relative;
   font-weight: 100;
 }
